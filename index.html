@@ -143,12 +143,27 @@
 
             <section class="section utp">
                 <div class="utp__container">
-                    <div class="utp__wrap">
+                    <div class="utp__wrap" data-utp>
                         <div class="utp__img" data-anim="fade-up">
-                            <img src="./assets/images/img1.jpg" alt="Choose your situation">
+                            <div class="utp__img-panel is-active" data-utp-panel="01">
+                                <img src="./assets/images/img1.jpg" alt="Residential Moving" width="593" height="427"
+                                    loading="lazy" />
+                            </div>
+                            <div class="utp__img-panel" data-utp-panel="02">
+                                <img src="./assets/images/img2.jpg" alt="Long Distance Moving" width="593" height="427"
+                                    loading="lazy" />
+                            </div>
+                            <div class="utp__img-panel" data-utp-panel="03">
+                                <img src="./assets/images/img3.jpg" alt="Commercial Moving" width="593" height="427"
+                                    loading="lazy" />
+                            </div>
+                            <div class="utp__img-panel" data-utp-panel="04">
+                                <img src="./assets/images/hero2.jpg" alt="Packaging Service" width="593" height="427"
+                                    loading="lazy" />
+                            </div>
                         </div>
                         <ul class="utp__list" data-anim-stagger="true">
-                            <li class="utp__item">
+                            <li class="utp__item is-active" data-utp-item="01">
                                 <div class="utp__item-number">01</div>
                                 <div class="utp__item-content">
                                     <h2 class="utp__item-title">Residential Moving
@@ -163,7 +178,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="utp__item">
+                            <li class="utp__item" data-utp-item="02">
                                 <div class="utp__item-number">02</div>
                                 <div class="utp__item-content">
                                     <h2 class="utp__item-title">Long Distance Moving
@@ -178,7 +193,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="utp__item">
+                            <li class="utp__item" data-utp-item="03">
                                 <div class="utp__item-number">03</div>
                                 <div class="utp__item-content">
                                     <h2 class="utp__item-title">Commercial Moving
@@ -193,7 +208,7 @@
                                     </svg>
                                 </div>
                             </li>
-                            <li class="utp__item">
+                            <li class="utp__item" data-utp-item="04">
                                 <div class="utp__item-number">04</div>
                                 <div class="utp__item-content">
                                     <h2 class="utp__item-title">Packaging Service
@@ -387,10 +402,11 @@
 
                                 <div class="reviews__slide swiper-slide">
                                     <article class="review-card">
-                                        <div class="review-card__media review-card__media--video" role="button" tabindex="0"
-                                            aria-label="Play video review">
+                                        <div class="review-card__media review-card__media--video" role="button"
+                                            tabindex="0" aria-label="Play video review">
                                             <div class="review-card__media-inner">
-                                                <img src="./assets/images/img2.jpg" alt="" width="392" height="198" loading="lazy" />
+                                                <img src="./assets/images/img2.jpg" alt="" width="392" height="198"
+                                                    loading="lazy" />
                                                 <span class="review-card__play" aria-hidden="true"></span>
                                             </div>
                                         </div>

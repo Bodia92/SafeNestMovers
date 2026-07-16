@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <meta name="theme-color" content="#bede2b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>Blog — SafeNestMovers</title>
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+    <link rel="apple-touch-icon" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+
+  <script type="module" crossorigin src="./assets/js/vendor.min.js"></script>
+  <script type="module" crossorigin src="./assets/js/main.min2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/css/style.min.css">
+</head>
+<body>
+    <div class="wrapper" id="main">
+        <header class="header">
+            <div class="header__container" data-anim="fade-down">
+                <a href="/" class="header__logo">
+                    <img src="./assets/images/logo.svg" alt="SafeNestMovers" />
+                </a>
+        
+                <div class="header__menu">
+                    <nav class="header__nav">
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="header__nav-item header__nav-item--has-child js-header-submenu">
+                                <div class="header__nav-parent">
+                                    <a href="services.html">Services</a>
+                                    <button class="header__submenu-toggle js-header-submenu-trigger" type="button"
+                                        aria-expanded="false" aria-label="Toggle Services submenu">
+                                        <svg class="icon header__nav-arrow" aria-hidden="true">
+                                            <use href="./assets/images/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="header__submenu js-header-submenu-body">
+                                    <ul class="header__submenu-list">
+                                        <li><a href="#">Local Moving</a></li>
+                                        <li><a href="#">Long Distance</a></li>
+                                        <li><a href="#">Packing Services</a></li>
+                                        <li><a href="#">Storage Solutions</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__nav-item header__nav-item--has-child js-header-submenu">
+                                <div class="header__nav-parent">
+                                    <a href="areas.html">Areas Served</a>
+                                    <button class="header__submenu-toggle js-header-submenu-trigger" type="button"
+                                        aria-expanded="false" aria-label="Toggle Areas Served submenu">
+                                        <svg class="icon header__nav-arrow" aria-hidden="true">
+                                            <use href="./assets/images/sprite.svg#icon-arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="header__submenu js-header-submenu-body">
+                                    <ul class="header__submenu-list">
+                                        <li><a href="area-single.html">Toronto</a></li>
+                                        <li><a href="#">Mississauga</a></li>
+                                        <li><a href="#">Brampton</a></li>
+                                        <li><a href="#">Vaughan</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="header__actions">
+                        <a href="#" class="header__btn btn btn-gradient">Lorem ipsum</a>
+                        <a href="#" class="header__btn btn btn-border" data-popup-target="#contact-us">Lorem ipsum</a>
+                    </div>
+                </div>
+        
+        
+                <button class="header__burger js-menu-trigger" type="button" aria-label="open menu">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main class="page page--blog">
+            <section class="section blog">
+                <div class="blog__container">
+                    <h1 class="blog__title page-title" data-anim="fade-up">Blog</h1>
+
+                    <div class="blog__grid" data-anim-stagger="true">
+                        <!--
+                            WP: get_template_part('components/Blog/Card', 'gallery')
+                            ACF: post_format / media_type = gallery, gallery images, excerpt, permalink, is_liked
+                        -->
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--gallery">
+                                <div class="blog-card__gallery">
+                                    <img class="blog-card__gallery-main" src="./assets/images/img1.jpg" alt="" width="400" height="400" loading="lazy" />
+                                    <div class="blog-card__gallery-side">
+                                        <img src="./assets/images/img2.jpg" alt="" width="200" height="200" loading="lazy" />
+                                        <img src="./assets/images/img3.jpg" alt="" width="200" height="200" loading="lazy" />
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like" aria-label="Like post" aria-pressed="false">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <!--
+                            WP: get_template_part('components/Blog/Card', 'video')
+                            ACF: video_url, poster, excerpt — video opens on single or in popup
+                        -->
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--video">
+                                <div class="blog-card__media-inner">
+                                    <img src="./assets/images/img2.jpg" alt="" width="400" height="400" loading="lazy" />
+                                    <span class="blog-card__play" aria-hidden="true"></span>
+                                </div>
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like is-liked" aria-label="Unlike post" aria-pressed="true">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--double">
+                                <img src="./assets/images/img1.jpg" alt="" width="400" height="200" loading="lazy" />
+                                <img src="./assets/images/img3.jpg" alt="" width="400" height="200" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like" aria-label="Like post" aria-pressed="false">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--single">
+                                <img src="./assets/images/hero3.jpg" alt="" width="400" height="400" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like is-liked" aria-label="Unlike post" aria-pressed="true">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <!--
+                            WP: get_template_part('components/Blog/Card', 'gallery')
+                            ACF: post_format / media_type = gallery, gallery images, excerpt, permalink, is_liked
+                        -->
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--gallery">
+                                <div class="blog-card__gallery">
+                                    <img class="blog-card__gallery-main" src="./assets/images/img1.jpg" alt="" width="400" height="400" loading="lazy" />
+                                    <div class="blog-card__gallery-side">
+                                        <img src="./assets/images/img2.jpg" alt="" width="200" height="200" loading="lazy" />
+                                        <img src="./assets/images/img3.jpg" alt="" width="200" height="200" loading="lazy" />
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like" aria-label="Like post" aria-pressed="false">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                        <!--
+                            WP: get_template_part('components/Blog/Card', 'video')
+                            ACF: video_url, poster, excerpt — video opens on single or in popup
+                        -->
+                        <article class="blog-card">
+                            <a href="#" class="blog-card__media blog-card__media--video">
+                                <div class="blog-card__media-inner">
+                                    <img src="./assets/images/img2.jpg" alt="" width="400" height="400" loading="lazy" />
+                                    <span class="blog-card__play" aria-hidden="true"></span>
+                                </div>
+                            </a>
+                            <div class="blog-card__body">
+                                <p class="blog-card__text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</p>
+                                <div class="blog-card__foot">
+                                    <a href="#" class="blog-card__more">
+                                        Read more
+                                        <svg class="icon" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-next"></use></svg>
+                                    </a>
+                                    <button type="button" class="blog-card__like is-liked" aria-label="Unlike post" aria-pressed="true">
+                                        <svg class="icon" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__col footer__col--brand">
+                        <a href="/" class="footer__logo">
+                            <img src="./assets/images/logo-white.svg" alt="SafeNestMovers" />
+                        </a>
+        
+                        <ul class="footer__contacts">
+                            <li>
+                                <a href="tel:+14377171071" class="footer__contact">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use href="./assets/images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <span>+1 (437) 717-1071</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:move@safenestmovers.com" class="footer__contact">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use href="./assets/images/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span>move@safenestmovers.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="footer__contact">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use href="./assets/images/sprite.svg#icon-time"></use>
+                                    </svg>
+                                    <span>Daily: 8:00 AM – 10:00 PM</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer__col footer__col--nav">
+                        <div class="footer__nav">
+                            <h3 class="footer__title">Services</h3>
+                            <ul class="footer__menu">
+                                <li><a href="#">Lorem ipsum semper</a></li>
+                                <li><a href="#">Lorem ipsum lectus</a></li>
+                                <li><a href="#">Lorem ipsum suscipit</a></li>
+                                <li><a href="#">Lorem ipsum ante</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav">
+                            <h3 class="footer__title">Company</h3>
+                            <ul class="footer__menu">
+                                <li><a href="#">Lorem ipsum semper</a></li>
+                                <li><a href="#">Lorem ipsum lectus</a></li>
+                                <li><a href="#">Lorem ipsum suscipit</a></li>
+                                <li><a href="#">Lorem ipsum ante</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="footer__col footer__col--social">
+                        <h3 class="footer__title">Social Media</h3>
+                        <div class="footer__social social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Instagram" target="_blank" rel="noopener">
+                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.15 0H24.85C30.45 0 35 4.55 35 10.15V24.85C35 27.5419 33.9306 30.1236 32.0271 32.0271C30.1236 33.9306 27.5419 35 24.85 35H10.15C4.55 35 0 30.45 0 24.85V10.15C0 7.45805 1.06937 4.87636 2.97287 2.97287C4.87636 1.06937 7.45805 0 10.15 0ZM9.8 3.5C8.12914 3.5 6.52671 4.16375 5.34523 5.34523C4.16375 6.52671 3.5 8.12914 3.5 9.8V25.2C3.5 28.6825 6.3175 31.5 9.8 31.5H25.2C26.8709 31.5 28.4733 30.8363 29.6548 29.6548C30.8363 28.4733 31.5 26.8709 31.5 25.2V9.8C31.5 6.3175 28.6825 3.5 25.2 3.5H9.8ZM26.6875 6.125C27.2677 6.125 27.8241 6.35547 28.2343 6.7657C28.6445 7.17594 28.875 7.73234 28.875 8.3125C28.875 8.89266 28.6445 9.44906 28.2343 9.8593C27.8241 10.2695 27.2677 10.5 26.6875 10.5C26.1073 10.5 25.5509 10.2695 25.1407 9.8593C24.7305 9.44906 24.5 8.89266 24.5 8.3125C24.5 7.73234 24.7305 7.17594 25.1407 6.7657C25.5509 6.35547 26.1073 6.125 26.6875 6.125ZM17.5 8.75C19.8206 8.75 22.0462 9.67187 23.6872 11.3128C25.3281 12.9538 26.25 15.1794 26.25 17.5C26.25 19.8206 25.3281 22.0462 23.6872 23.6872C22.0462 25.3281 19.8206 26.25 17.5 26.25C15.1794 26.25 12.9538 25.3281 11.3128 23.6872C9.67187 22.0462 8.75 19.8206 8.75 17.5C8.75 15.1794 9.67187 12.9538 11.3128 11.3128C12.9538 9.67187 15.1794 8.75 17.5 8.75ZM17.5 12.25C16.1076 12.25 14.7723 12.8031 13.7877 13.7877C12.8031 14.7723 12.25 16.1076 12.25 17.5C12.25 18.8924 12.8031 20.2277 13.7877 21.2123C14.7723 22.1969 16.1076 22.75 17.5 22.75C18.8924 22.75 20.2277 22.1969 21.2123 21.2123C22.1969 20.2277 22.75 18.8924 22.75 17.5C22.75 16.1076 22.1969 14.7723 21.2123 13.7877C20.2277 12.8031 18.8924 12.25 17.5 12.25Z"
+                                                fill="white" />
+                                        </svg>
+        
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="Facebook" target="_blank" rel="noopener">
+                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M35 17.5C35 7.84 27.16 0 17.5 0C7.84 0 0 7.84 0 17.5C0 25.97 6.02 33.0225 14 34.65V22.75H10.5V17.5H14V13.125C14 9.7475 16.7475 7 20.125 7H24.5V12.25H21C20.0375 12.25 19.25 13.0375 19.25 14V17.5H24.5V22.75H19.25V34.9125C28.0875 34.0375 35 26.5825 35 17.5Z"
+                                                fill="white" />
+                                        </svg>
+        
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28 0C28.9283 0 29.8185 0.368749 30.4749 1.02513C31.1313 1.6815 31.5 2.57174 31.5 3.5V28C31.5 28.9283 31.1313 29.8185 30.4749 30.4749C29.8185 31.1313 28.9283 31.5 28 31.5H3.5C2.57174 31.5 1.6815 31.1313 1.02513 30.4749C0.368749 29.8185 0 28.9283 0 28V3.5C0 2.57174 0.368749 1.6815 1.02513 1.02513C1.6815 0.368749 2.57174 0 3.5 0H28ZM27.125 27.125V17.85C27.125 16.3369 26.5239 14.8859 25.454 13.816C24.3841 12.7461 22.9331 12.145 21.42 12.145C19.9325 12.145 18.2 13.055 17.36 14.42V12.4775H12.4775V27.125H17.36V18.4975C17.36 17.15 18.445 16.0475 19.7925 16.0475C20.4423 16.0475 21.0654 16.3056 21.5249 16.7651C21.9844 17.2246 22.2425 17.8477 22.2425 18.4975V27.125H27.125ZM6.79 9.73C7.56974 9.73 8.31754 9.42025 8.86889 8.86889C9.42025 8.31754 9.73 7.56974 9.73 6.79C9.73 5.1625 8.4175 3.8325 6.79 3.8325C6.00562 3.8325 5.25337 4.14409 4.69873 4.69873C4.14409 5.25337 3.8325 6.00562 3.8325 6.79C3.8325 8.4175 5.1625 9.73 6.79 9.73ZM9.2225 27.125V12.4775H4.375V27.125H9.2225Z"
+                                                fill="white" />
+                                        </svg>
+        
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>    </div>
+    <div id="contact-us" class="popup" aria-hidden="true">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button class="popup__close" data-close-popup aria-label="Закрити" type="button"></button>
+                    <form action="#" id="quote-form-popup">
+                        <h2 class="form-title">Lorem ipsum dolor sit amet consectetur</h2>
+                        <div class="form-text">Lorem ipsum dolor sit amet consectetur. Duis et purus vel accumsan posuere orci nulla.</div>
+                    
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input class="form-input" type="text" name="first-name" id="quote-name-popup"
+                                    placeholder="First name">
+                            </div>
+                    
+                            <div class="form-group">
+                                <input class="form-input" type="text" name="last-name" id="quote-last-name-popup"
+                                    placeholder="Last name">
+                            </div>
+                    
+                            <div class="form-group">
+                                <input class="form-input" type="tel" name="phone" id="quote-phone-popup" required
+                                    placeholder="Phone">
+                            </div>
+                    
+                            <div class="form-group">
+                                <input class="form-input" type="email" name="email" id="quote-email-popup" required
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <div class="form-group-title">Choose</div>
+                    
+                            <div class="form-options form-options--choose">
+                                <button type="button" class="form-options__trigger" aria-expanded="false">
+                                    <span class="form-options__value">Choose</span>
+                                    <svg class="icon" aria-hidden="true">
+                                        <use href="./assets/images/sprite.svg#icon-arrow-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="form-options__body">
+                                    <div class="form-options__content">
+                                        <label class="custom-radio form-options__item">
+                                            <input type="radio" name="quote-service-popup" id="quote-service-residential-popup"
+                                                value="residential-moving">
+                                            <span class="custom-radio__text">Residential Moving</span>
+                                        </label>
+                                        <label class="custom-radio form-options__item">
+                                            <input type="radio" name="quote-service-popup" id="quote-service-long-distance-popup"
+                                                value="long-distance-moving">
+                                            <span class="custom-radio__text">Long Distance Moving</span>
+                                        </label>
+                                        <label class="custom-radio form-options__item">
+                                            <input type="radio" name="quote-service-popup" id="quote-service-commercial-popup"
+                                                value="commercial-moving">
+                                            <span class="custom-radio__text">Commercial Moving</span>
+                                        </label>
+                                        <label class="custom-radio form-options__item">
+                                            <input type="radio" name="quote-service-popup" id="quote-service-packaging-popup"
+                                                value="packaging-service">
+                                            <span class="custom-radio__text">Packaging Service</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <textarea class="form-input" name="message" id="quote-message-popup" placeholder="Message"></textarea>
+                        </div>
+                    
+                        <button class="btn btn-gradient" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup-success" class="popup" aria-hidden="true">
+        <div class="popup__wrapper">
+    
+            <div class="popup__content">
+                <button class="popup__close close-popup" data-close-popup aria-label="Close" type="button"></button>
+    
+                <div class="popup__body">
+                    <h2 class="popup__title">
+                        Дякуємо!
+                    </h2>
+                    <div class="popup__text">
+                        <p>Ми звʼяжемось з вами протягом 24 годин</p>
+                    </div>
+                    <button class="btn" type="button" data-close-popup>Ок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="review-popup" class="popup popup--review" aria-hidden="true">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button class="popup__close" data-close-popup aria-label="Close" type="button"></button>
+                <div class="review-popup">
+                    <div class="review-popup__layout" data-review-popup-layout>
+                        <div class="review-popup__media" data-review-popup-media></div>
+                        <div class="review-popup__body">
+                            <div class="review-popup__head">
+                                <div class="review-popup__user">
+                                    <span class="review-popup__avatar" aria-hidden="true">
+                                        <img src="./assets/images/test1.jpg" alt="Mira A.">
+                                    </span>
+                                    <div class="review-popup__meta">
+                                        <div class="review-popup__name" data-review-popup-name></div>
+                                        <div class="review-popup__stars" data-review-popup-stars></div>
+                                    </div>
+                                </div>
+                                <time class="review-popup__date" data-review-popup-date datetime=""></time>
+                            </div>
+                            <div class="review-popup__text" data-review-popup-text></div>
+                            <div class="review-popup__logo">
+                                <img src="./assets/images/logo.svg" alt="SafeNestMovers" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></body>
+
+</html>
